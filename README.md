@@ -16,7 +16,7 @@ $ git clone https://github.com/IGMA-STUDIO/docker-registry-and-ui.git
 Create certificate fore regsitry
 ```sh
 $ openssl genrsa 1024 > certs/host.key
-$ chmod 400 host.key
+$ chmod 400 certs/host.key
 $ openssl req -new -x509 -nodes -sha1 -days 365 -key certs/host.key > certs/host.cert
 ```
 Create login & password for basic auth. Replcate testuser and testpassword original credential
